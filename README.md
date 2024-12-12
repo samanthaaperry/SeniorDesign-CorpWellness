@@ -46,5 +46,4 @@ HOW TO SETUP AND VIEW WEBPAGE:
 
         "pip install -r requirements.txt" 
 
-    5. Run the 'run.py' file in the 'Employee_Wellness_App' folder
-       Next follow the link provided in the cmd propmt
+    5. Run the 'run.py' file and follow the link provided in the cmd propmt.
