@@ -8,6 +8,31 @@ HOW TO SETUP AND VIEW WEBPAGE:
 
     MySQL installed in full, with a DB host, username, and password ready to be configured
 
+Steps for MySQL:
+
+Install MySQL Server and Configure Database
+	
+MySQL Setup: Ensure that MySQL Server is properly installed and running. If not, download and install MySQL from the MySQL official site.
+
+Database Creation: Before running the application, you need to create the database and initialize its schema. All the necessary build scripts for setting up the database, populating it with initial data, and executing queries are located in the Build_Scripts folder within the project directory.
+
+Steps to Set Up the Database:
+Access the Build_Scripts Folder: 
+- Navigate to the Build_Scripts folder in your project directory. It contains SQL files for creating the database, tables, and inserting data.
+
+Run the SQL Scripts:
+Log in to MySQL:
+mysql -u <DB_USER> -p
+Execute the database scripts
+
+Verify the Database Setup:
+
+Check that the database and tables have been created:
+SHOW DATABASES;
+USE employee_wellness;
+SHOW TABLES;
+Test Queries:
+
 
     2. Initialize VENV: 
 
@@ -47,3 +72,6 @@ HOW TO SETUP AND VIEW WEBPAGE:
         "pip install -r requirements.txt" 
 
     5. Run the 'run.py' file and follow the link provided in the cmd propmt.
+
+
+    6. Once the application is running, follow the instructions in the REPORT.pdf. 
