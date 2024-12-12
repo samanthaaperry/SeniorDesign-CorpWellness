@@ -199,7 +199,7 @@ def add_employee():
 #
 # TO-DO : 
 # Validate the input using the function "verify_coordinator_alt" to first check if the employee ID
-# Belongs to a coordinator. Provide the user feedback is the employee ID belongs to a coordinator. - Micah
+# Belongs to a coordinator. Provide the user feedback is the employee ID belongs to a coordinator.
 @app.route('/delete_employee', methods=['GET', 'POST'])
 @cred_check('secretary', 'coordinator')
 def delete_employee():
@@ -297,7 +297,7 @@ def enroll_employee():
 # CHANGE "Area of Expertise" TO "Program ID" on frontend. The "Area of Expertise" field is currently used to pass the "program_id" to the backend
 # ADJUST flash messages display location
 # 
-# micah - 
+
 # validate input dates(low priority)
 @app.route('/add_wellness_program', methods = ['GET', 'POST'])
 @cred_check('secretary', 'coordinator')
@@ -510,7 +510,7 @@ def create_health_metric():
 
 
 """
-needs to handle a GET request, not just post - Micah
+needs to handle a GET request, not just post
 
 Provided with a program ID, return contact info for enrolled employees
 """
@@ -576,7 +576,6 @@ def view_enrollment_list():
 
     return render_template('view_enrollment_list.html', program_ids=program_ids, enrollment_list=enrollment_list)
 
-# "No data available for department breakdown." - Micah
 @app.route('/view_department_breakdown')
 @cred_check('coordinator')
 def view_department_breakdown():
